@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формирование заказа</title>
+  </head>
+  <body>
+    <div>
+      <p>
+        Номер заказа:
+        <input type="number" id="orderNumber" />
+      </p>
+    </div>
+
+    <div id="orderInfo">
+      <div>
+        <p>
+          Клиент:
+          <input type="text" id="clientId" hidden disabled />
+          <input type="text" id="clientName" disabled />
+          <button id="btnSearchClient">Поиск</button>
+        </p>
+      </div>
+      <div>
+        <p>
+          Услуги:
+          <input type="text" name="serviceId" hidden disabled />
+          <input type="text" id="serviceName" disabled />
+          <button id="btnSearchService">Поиск</button>
+        </p>
+        <button id="btnAddService">Добавить услугу к заказу</button>
+      </div>
+      <div>
+        <p>
+          Время аренды: <input type="number" id="rentTime" value="1" /> часов
+        </p>
+      </div>
+
+      <div>
+        <p style="display: inline-block">Итоговая стоимость:</p>
+        <p id="price" style="display: inline-block">00</p>
+      </div>
+      <div>
+        <button id="btnCreateOrder">Сформировать заказ</button>
+      </div>
+    </div>
+  </body>
+</html>

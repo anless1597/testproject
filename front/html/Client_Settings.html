@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Настройки</title>
+  </head>
+  <body>
+    <h1>Настройки профиля</h1>
+    
+    <div>
+      <h2>Личные данные</h2>
+      <div>
+        <p>Фамилия: <input type="text" id="lastName" />*</p>
+      </div>
+      <div>
+        <p>Имя: <input type="text" id="firstName" />*</p>
+      </div>
+      <div>
+        <p>
+          Отчество:
+          <input type="text" id="patronimic" />
+        </p>
+      </div>
+      <div>
+        <p>Дата рождения: <input type="date" id="dateOfBirth" />*</p>
+      </div>
+      <div>
+        <p>
+          Пол:
+          <select id="sex">
+            <option value="Мужской">Мужской</option>
+            <option value="Женский">Женский</option>
+          </select>
+        </p>
+      </div>
+      <div>
+        <p>Телефон: <input type="text" id="phoneNumber" />*</p>
+      </div>
+      <div>
+        <p>
+          Email:
+          <input type="text" id="email" />
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Смена пароля</h2>
+      <div>
+        <p>
+          Старый пароль:
+          <input type="password" id="oldPassword" />
+        </p>
+      </div>
+      <div>
+        <p>
+          Новый пароль:
+          <input type="password" id="newPassword" />
+        </p>
+      </div>
+      <div>
+        <p>
+          Подтвердите пароль:
+          <input type="password" id="repeatedPassword" />
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <button id="btnSave">Сохранить</button>
+      <button id="btnCancel">Отмена</button>
+    </div>
+  </body>
+</html>
